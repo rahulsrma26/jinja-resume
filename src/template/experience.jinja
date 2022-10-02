@@ -1,0 +1,19 @@
+{%- macro experience(exp) %}
+<div class="vstack">
+  <div class="hstack apart">
+    <b class="company">{{exp.company}}</b>
+    <div>{{exp.location}}</div>
+  </div>
+  <div class="hstack apart">
+    <i>{{exp.title}}</i>
+    <i>{{exp.start}} - {{exp.end}}</i>
+  </div>
+  <div class="mini-vgap"></div>
+  <ul>
+    {%- for item in exp.projects %}
+    <li>{{item | safe}}</li>
+    {%- endfor %}
+  </ul>
+  <div class="vgap"></div>
+</div>
+{%- endmacro %}

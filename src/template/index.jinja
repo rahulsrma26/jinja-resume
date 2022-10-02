@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Resume v{{VERSION}}{% if dev %} (dev){% endif %}</title>
+  <link rel="stylesheet" href="{{BASE_URL}}/style.css" />
+  <link rel="icon" type="image/svg+xml" href="{{BASE_URL}}/vite.svg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons-react/dist/index.umd.min.js" defer></script>
+  {%- if DEBUG %} {{ hot_reload.script(url_for('hot-reload')) | safe }} {% endif %}
+  {%- from "sidebar.jinja" import sidebar with context %}
+  {%- from "content.jinja" import content with context %}
+</head>
+
+<body>
+  <page size="A4">
+    <div class="vstack grow">
+      <div class="heading">
+        {{ data.name }}
+      </div>
+      <div class="middle">
+        <div class="hstack grow">
+          <div class="sidebar">
+            {{ sidebar(data) }}
+          </div>
+          <div class="main">
+            <div class="vstack grow">
+              <div class="content">
+                {{ content(data) }}
+              </div>
+              <div class="footer">
+                <pre>This resume is generatd using python, html and css (<a target="_blank" href="https://github.com/rahulsrma26/jinja-resume">github</a>)</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </page>
+</body>
+
+</html>

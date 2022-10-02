@@ -1,0 +1,11 @@
+{% macro technical(items) %}
+<ul>
+  {% for key, value in items -%}
+  <li>
+    <b>{{key}}:</b>
+    <br />
+    {{value}}
+  </li>
+  {% endfor %}
+</ul>
+{% endmacro %}

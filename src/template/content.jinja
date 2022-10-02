@@ -1,0 +1,28 @@
+{% from "experience.jinja" import experience with context %}
+{% from "education.jinja" import education with context %}
+{% macro content(data) %}
+<div class="vgap"></div>
+
+<h3>PROFESSIONAL EXPERIENCES</h3>
+<hr />
+
+{%- for exp in data.experiences %}
+{{ experience(exp) }}
+{%- endfor %}
+
+<h3>EDUCATIONAL QUALIFICATIONS</h3>
+<hr />
+
+{%- for edu in data.education %}
+{{ education(edu) }}
+{%- endfor %}
+
+<h3>ACHIEVEMENTS</h3>
+<hr />
+<ul>
+  <div class="vgap"></div>
+  {% for item in data.achievements -%}
+  <li>{{item | safe}}</li>
+  {%- endfor %}
+</ul>
+{% endmacro %}

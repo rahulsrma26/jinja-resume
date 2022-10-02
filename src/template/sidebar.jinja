@@ -1,0 +1,38 @@
+{% from "contact.jinja" import contact with context %}
+{% from "technical.jinja" import technical with context %}
+{% from "publication.jinja" import publication with context %}
+{% from "personal.jinja" import personal with context %}
+{% macro sidebar(data) %}
+<div class="vstack">
+  <div class="side-section vstack">
+    <h4>Contact</h4>
+    <div class="info">
+      {{ contact(data.contact.items()) }}
+    </div>
+    <hr />
+    <h4>Career Summary</h4>
+    <div class="info">
+      {{data.summary}}
+    </div>
+    <hr />
+    <h4>Techincal Exposure</h4>
+    <div class="info">
+      {{ technical(data.technical.items()) }}
+    </div>
+    <hr />
+    <h4>Publications</h4>
+    <div class="info">
+      {{ publication(data.publications, data.scholar) }}
+    </div>
+    <hr />
+    <h4>Personal Details</h4>
+    <div class="info">
+      {{ personal(data.personal.items()) }}
+    </div>
+    <hr />
+    <div class="info">
+      {{data.declaration}}
+    </div>
+  </div>
+</div>
+{% endmacro %}

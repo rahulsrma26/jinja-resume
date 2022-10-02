@@ -1,0 +1,20 @@
+{% macro contact(items) %}
+<table>
+  <tbody>
+    {%- for icon, contact in items %}
+    <tr>
+      <td>
+        <b class="ti {{icon}} icon-tabler"></b>
+      </td>
+      <td>
+        {%- if contact.link %}
+        <a href="{{contact.link}}">{{contact.title}}</a>
+        {%- else %}
+        {{contact.title}}
+        {%- endif %}
+      </td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+{% endmacro %}
