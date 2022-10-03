@@ -100,11 +100,16 @@ a:visited {
   background: rgb(246, 245, 245);
   min-height: 7mm;
   text-align: center;
+  font-size: 3mm;
 }
 .footer pre {
   margin: 0;
   padding: 0;
   padding-top: 1mm;
+}
+
+.footer a {
+  color: rgb(57, 163, 185);
 }
 
 h3 {

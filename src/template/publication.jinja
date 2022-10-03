@@ -1,9 +1,0 @@
-{% macro publication(publications, scholar) %}
-{{publications}}
-<br />
-<a target="_blank" href="{{scholar}}">Google scholar profile</a>
-<br />
-{% set pubs = citations(scholar) %}
-(citations: {{pubs['citations']}},
-h-index: {{pubs['h-index']}})
-{% endmacro %}

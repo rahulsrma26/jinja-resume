@@ -5,12 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Resume v{{VERSION}}{% if dev %} (dev){% endif %}</title>
+  <title>{{data.name}} Resume v{{VERSION}}{% if DEBUG %} (dev){% endif %}</title>
   <link rel="stylesheet" href="{{BASE_URL}}/style.css" />
   <link rel="icon" type="image/svg+xml" href="{{BASE_URL}}/vite.svg" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
   <script src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons-react/dist/index.umd.min.js" defer></script>
-  {%- if DEBUG %} {{ hot_reload.script(url_for('hot-reload')) | safe }} {% endif %}
+  {%- if DEBUG %} {{ hot_reload.script(url_for('hot-reload')).replace(
+  "window.location.reload();", "{window.location.reload(true); console.log('reloading'); }"
+  ) | safe }} {% endif %}
   {%- from "sidebar.jinja" import sidebar with context %}
   {%- from "content.jinja" import content with context %}
 </head>
@@ -32,7 +34,7 @@
                 {{ content(data) }}
               </div>
               <div class="footer">
-                <pre>This resume is generatd using python, html and css (<a target="_blank" href="https://github.com/rahulsrma26/jinja-resume">github</a>)</pre>
+                <pre>The resume is generated using python, html and css (<a target="_blank" href="https://github.com/rahulsrma26/jinja-resume">github</a>)</pre>
               </div>
             </div>
           </div>

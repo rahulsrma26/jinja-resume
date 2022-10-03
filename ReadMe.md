@@ -6,7 +6,6 @@ For live preview the dev environment is build using [fastapi](https://fastapi.ti
 
 Features:
 
-- You can create `secret.json` in `src` folder to manage private info (included in .gitignore). It will be merged with `data.json` in runtime but will not be uploaded to the repo.
 - jinja macros for managing generated html
 - css with predefined `A4` sheet variables and print support
 - [tabler/icon](https://github.com/tabler/tabler-icons) included
@@ -36,8 +35,16 @@ Features:
 ## Development
 
 ```sh
-make dev
+python -m src.run dev ./data/profile.json
 ```
+
+Use `-r` (or `--reload`) option for hot reloading. You can also use multiple json files they will be merged together (later files will override previous value if duplicate exists). It will be useful for saving private information that you don't wanna upload.
+
+```sh
+python -m src.run dev -r ./data/profile.json ./data/private.json
+```
+
+`private.json` is already included in `.gitignore` so it won't be uploaded to github.
 
 It will create a `localhost` server
 
@@ -56,7 +63,7 @@ INFO:     Application startup complete.
 ## Build
 
 ```sh
-make build
+python -m src.run build -r ./data/profile.json
 ```
 
-This will create static html in the `build` folder.
+This will create static files in the `build` folder.

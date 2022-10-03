@@ -1,0 +1,145 @@
+{
+    "name": "Rahul Sharma",
+    "contact": {
+        "ti-phone": {
+            "title": "+44 0123456789"
+        },
+        "ti-mail": {
+            "title": "abc@xyz.com",
+            "link": "mailto:abc@xyz.com"
+        },
+        "ti-brand-github": {
+            "title": "github.com/rahulsrma26",
+            "link": "https://github.com/rahulsrma26"
+        },
+        "ti-world": {
+            "title": "rahulsrma26.github.io",
+            "link": "https://rahulsrma26.github.io/"
+        },
+        "ti-brand-linkedin": {
+            "title": "linkedin.com/in/rahulsrma26",
+            "link": "https://www.linkedin.com/in/rahulsrma26/"
+        }
+    },
+    "summary": "Enthusiastic, impact oriented, and problem solving ML engineer with leadership skills. Have 9+ years of work experience ranging from formulating ideas to shipping models. Expertise in speech, deep learning, C++,  python, and systems. Passionate about creating positive changes in human lives by using ML and other AI techniques.",
+    "technical": {
+        "Languages": "Python, C++, Js, C, C#, Java, R",
+        "Libraries": "Tensorflow, PyTorch, FastAPI",
+        "Frameworks": "OpenCL, CUDA, NodeJs, React",
+        "Others": "Docker, SQL, OpenGL, CMake"
+    },
+    "scholar": "https://scholar.google.com/citations?user=mkpp9FcAAAAJ&hl=en",
+    "publication": {
+        "areas": "NLP, ML, Image Processing, GPU computing",
+        "latest": {
+            "title": "Phonetic Word Embeddings",
+            "link": "https://arxiv.org/pdf/2109.14796.pdf",
+            "year": 2021
+        }
+    },
+    "personal": {
+        "Languages": "Hindi, English",
+        "Gender": "Male",
+        "Marital Status": "Married"
+    },
+    "declaration": "I solemnly declare that all the above information is correct to the best of my knowledge and belief.",
+    "experiences": [
+        {
+            "company": "Hike Private Ltd.",
+            "title": "Senior ML Scientist",
+            "location": "Bangalore",
+            "start": "Oct 2020",
+            "end": "Mar 2021",
+            "projects": [
+                "Devised Ludo (a board game) AI with different strategies against human opponents",
+                "Implemented skill based matchmaking system for RMG apps"
+            ]
+        },
+        {
+            "company": "Reliance Jio, AI CoE ",
+            "title": "Manager Data Scientist",
+            "location": "Bangalore",
+            "start": "Sep 2018",
+            "end": "Oct 2020",
+            "projects": [
+                "Led a team of 3 data scientists, handling services and data pipeline for the medical industry",
+                "Developed novel phonetic-embeddings for command model, surpassing SOTA by 12%",
+                "Devised framework for training and deployment, which reduces experimentation time by 40%",
+                "Improved STT performance in noisy environments by replacing MFCC with ED based features"
+            ]
+        },
+        {
+            "company": "Liv Ai Pvt Ltd (Now Flipkart)",
+            "title": "Research Software Engineer II",
+            "location": "Bangalore",
+            "start": "Oct 2017",
+            "end": "Apr 2018",
+            "projects": [
+                "Developed Silence detection (VAD) for server and mobile (OpenCL), used by millions of users every day",
+                "Single-handedly devised a C++ library to port TF models to any target platform such as ARM/Intel and CPU/GPU, saving server cost for the company and improving user experience"
+            ]
+        },
+        {
+            "company": "Various Projects / Consultancy",
+            "title": "Independent Applied Scientist",
+            "location": "Remote",
+            "start": "Jun 2016",
+            "end": "Sep 2017",
+            "projects": [
+                "Devised course recommendation model to maximizing employment in blue-collar jobs market",
+                "Implemented a generic inference engine for semantic analysis on large scale Knowledge-Graph",
+                "Developed face search app for missing people on the Android platform for a public sector client"
+            ]
+        },
+        {
+            "company": "Microsoft",
+            "title": "Applied Scientist",
+            "location": "Bangalore",
+            "start": "Jul 2013",
+            "end": "May 2016",
+            "projects": [
+                "Trained Ad click-prediction models for the European market as a part of the Ranking team",
+                "Developed supervised semantic word-embeddings yielding new text similarity feature",
+                "Devised a highly parallel SGD framework in C++ for big data, reducing training time by 6 fold"
+            ]
+        },
+        {
+            "company": "IBM Research Labs",
+            "title": "Intern",
+            "location": "Delhi",
+            "start": "Jun 2010",
+            "end": "Sep 2010",
+            "projects": [
+                "Project: Mobile Data Services using Open Protocols and Internet over Bluetooth (<a target=\"_blank\" href=\"https://www.researchgate.net/profile/Nitin-Gupta-29/publication/258493813_Mobile_Data_Services_using_Open_Protocols_and_Internet/links/559bde8608ae0035df233623/Mobile-Data-Services-using-Open-Protocols-and-Internet.pdf\">paper</a>)"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "university": "Indian Institute of Science (IISc)",
+            "degree": "M.E.",
+            "major": "Computer Science and Engineering",
+            "start": "2011",
+            "end": "2013",
+            "marks": "CGPA 6.4/8.0",
+            "location": "Bangalore"
+        },
+        {
+            "university": "Uttarakhand University",
+            "degree": "B.Tech.",
+            "major": "Computer Science and Engineering",
+            "start": "2007",
+            "end": "2011",
+            "marks": "CGPA 8.2/10",
+            "location": "Roorkee"
+        }
+    ],
+    "achievements": [
+        "GATE 2011: All India Rank 35, percentile 99.97.",
+        "1st rank in Booking.com Hackathon 2015 (organized at <a target=\"_blank\" href=\"https://www.hackerrank.com/results/booking-hackathon/welcometors\">hackerrank</a>).",
+        "47th rank in world Quora Haqathon 2014 (organized at <a target=\"_blank\" href=\"https://www.hackerrank.com/results/quora-haqathon/welcometors\">hackerrank</a>), Country rank 5th.",
+        "ProjectEuler+ (long-running <a target=\"_blank\" href=\"https://www.hackerrank.com/contests/projecteuler/challenges\">hackerrank</a> contest), rank 86 (jan’19).",
+        "Hackerrank highest country rank 4th (week of code 23), highest rating 2293 (Oct’16).",
+        "IBM Certified Database Associate (000-730, year 2010), clear with 92.19%."
+    ]
+}

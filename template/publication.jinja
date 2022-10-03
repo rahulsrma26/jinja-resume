@@ -1,0 +1,10 @@
+{% macro publication(pub, scholar) %}
+<b>Lastest:</b> <a target="_blank" href="{{pub.latest.link}}">{{pub.latest.title}}</a> ({{pub.latest.year}})
+<br />
+<b>Areas:</b> {{pub.areas}}
+<br />
+<a target="_blank" href="{{scholar}}">Google scholar profile</a>
+({%- for key, value in citations(scholar).items() -%}
+{% if not loop.first %}, {% endif %}{{value}} {{key}}
+{%- endfor %})
+{% endmacro %}
