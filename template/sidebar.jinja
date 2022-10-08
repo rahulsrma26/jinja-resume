@@ -5,6 +5,13 @@
 {% macro sidebar(data) %}
 <div class="vstack">
   <div class="side-section vstack">
+    {% if data.profile -%}
+    <div class="info">
+      <div class="vgap"></div>
+      <img src="{{data.profile}}" alt="profile pic" />
+    </div>
+    <hr />
+    {% endif %}
     <h4>Contact</h4>
     <div class="info">
       {{ contact(data.contact.items()) }}
@@ -20,11 +27,13 @@
       {{ technical(data.technical.items()) }}
     </div>
     <hr />
+    {% if data.publication and data.scholar -%}
     <h4>Publications</h4>
     <div class="info">
       {{ publication(data.publication, data.scholar) }}
     </div>
     <hr />
+    {% endif %}
     <h4>Personal Details</h4>
     <div class="info">
       {{ personal(data.personal.items()) }}

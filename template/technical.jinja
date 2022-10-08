@@ -4,7 +4,24 @@
   <li>
     <b>{{key}}:</b>
     <br />
+    {% if value is mapping %}
+    <table>
+      <tbody>
+        {%- for k, v in value.items() %}
+        <tr>
+          <td>
+            {{k}}
+          </td>
+          <td>
+            {{v}}
+          </td>
+        </tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+    {% else %}
     {{value}}
+    {% endif %}
   </li>
   {% endfor %}
 </ul>

@@ -27,6 +27,10 @@ a:visited {
   color: blue;
 }
 
+img {
+  border-radius: 50%;
+}
+
 @media print {
   body {
     visibility: none;

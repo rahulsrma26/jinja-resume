@@ -1,0 +1,153 @@
+{
+    "name": "Sasuke Uchiha (うちはサスケ)",
+    "profile": "https://static.wikia.nocookie.net/naruto/images/b/b7/Sasuke_Part_3.png",
+    "contact": {
+        "ti-phone": {
+            "title": "+1 0123456789"
+        },
+        "ti-mail": {
+            "title": "susuke@uchiha.com",
+            "link": "mailto:susuke@uchiha.com"
+        },
+        "ti-brand-github": {
+            "title": "github.com/rahulsrma26",
+            "link": "https://github.com/rahulsrma26"
+        },
+        "ti-world": {
+            "title": "rahulsrma26.github.io",
+            "link": "https://rahulsrma26.github.io/"
+        },
+        "ti-brand-linkedin": {
+            "title": "linkedin.com/in/rahulsrma26",
+            "link": "https://www.linkedin.com/in/rahulsrma26/"
+        }
+    },
+    "summary": "Result oriented, and problem solving powerful shinobi. Have 10+ years of work experience ranging from formulating ideas to killing gods. Passionate about creating positive changes in human lives by using my powers and collaboration.",
+    "technical": {
+        "Nature Types": "Lightning, Fire, Earth, Wind, Water, Yin",
+        "Kekkei Genkai": "Mangekyō Sharingan, Rinnegan",
+        "Skills": {
+            "Taijutsu": "★★★★☆",
+            "Ninjutsu": "★★★★★",
+            "Genjutsu": "★★★★★",
+            "Bukijutsu": "★★★★☆"
+        }
+    },
+    "personal": {
+        "DOB": "July 23 2000",
+        "Gender": "Male",
+        "Marital Status": "Married",
+        "Languages": "English, Japanese",
+        "Clan": "Uchiha"
+    },
+    "declaration": "I solemnly declare that all the above information is correct to the best of my knowledge and belief.",
+    "experiences": [
+        {
+            "company": "Village hidden in the leaves",
+            "title": "Supporting Kage (支う影)",
+            "location": "Remote",
+            "start": "Oct 2017",
+            "end": "Present",
+            "projects": [
+                "Destroyed large meteor that makes it through the village's defences",
+                "Defeated Chino of Land of Hot Water with dōjutsu Ketsuryūgan",
+                "Saved village from Shin Uchiha and clones with Mangekyō Sharingan"
+            ]
+        },
+        {
+            "company": "Allied Shinobi Forces",
+            "title": "Main contributor",
+            "location": "Remote",
+            "start": "Oct 2017",
+            "end": "Oct 2017",
+            "projects": [
+                "Teamed-up with Naruto and sealed Kaguya Ōtsutsuki (Progenitor of Chakra) alongside black zetsu",
+                "Stopped Infinite Tsukuyomi casted by Kaguya",
+                "Stopped Obito (as 10 tails jinchūriki) to cast Infinite Tsukuyomi",
+                "Teamed-up with reanimated Itachi to stop the reanimation jutsu by disabling it's caster Kabuto (enhanced with sage powers) in the 4th great ninja war"
+            ]
+        },
+        {
+            "company": "Akatsuki",
+            "title": "Consultant Team lead",
+            "location": "Remote",
+            "start": "Sep 2018",
+            "end": "Oct 2017",
+            "projects": [
+                "Multiple battle experiences to capture Killer B (8 tails jinchūriki)"
+            ]
+        },
+        {
+            "company": "Taka",
+            "title": "Founder & CEO (Chief Execution Officer)",
+            "location": "Remote",
+            "start": "Oct 2017",
+            "end": "Apr 2018",
+            "projects": [
+                "Fought all 5 kage in Five Kage Summit held at Land of the Iron.",
+                "Killed <a target=\"_blank\" href=\"https://naruto.fandom.com/wiki/Danz%C5%8D_Shimura\">Danzō</a> (11 sharingan ninja) also known as <i>The Darkness of the Shinobi</i>"
+            ]
+        },
+        {
+            "company": "Hebi",
+            "title": "Founder & CEO (Chief Execution Officer)",
+            "location": "Remote",
+            "start": "Jun 2016",
+            "end": "Sep 2017",
+            "projects": [
+                "Responsible for killing Itachi a legendary shinobi with Mangekyō Sharingan",
+                "Able to break Itachi's Tsukuyomi casted by Mangekyō Sharingan using only normal Sharingan",
+                "Defeated Akatsuki member <a target=\"_blank\" href=\"https://naruto.fandom.com/wiki/Deidara\">Deidara</a> in one on one combat"
+            ]
+        },
+        {
+            "company": "Village Hidden in the Sound",
+            "title": "Sound Four Shinobi",
+            "location": "Otogakure",
+            "start": "Jun 2013",
+            "end": "Jun 2016",
+            "projects": [
+                "Absorbed Konohagakure's legendary Sannin <a target=\"_blank\" href=\"https://naruto.fandom.com/wiki/Deidara\">Orochimaru</a> inside Living Corpse Reincarnation jutsu",
+                "Able to fully utilize Orochimaru's Cursed Seal of Heaven",
+                "Defeated the group of Otogakure forces without receiving a scratch and without killing any opponents"
+            ]
+        },
+        {
+            "company": "Village hidden in the leaves",
+            "title": "Genin (Team Kakashi)",
+            "location": "Konohagakure",
+            "start": "Jun 2012",
+            "end": "Jun 2013",
+            "projects": [
+                "Helped defeat <a target=\"_blank\" href=\"https://naruto.fandom.com/wiki/Zabuza_Momochi\">Zabuza</a> one of the Legendary Seven Ninja Swordsmen of the Mist",
+                "Reached final round of chunin exam as a first year genin"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "university": "Orochimaru Academy",
+            "degree": "Ninja",
+            "major": "Lightening Style",
+            "start": "2013",
+            "end": "2016",
+            "marks": "CGPA 10/10",
+            "location": "Otogakure"
+        },
+        {
+            "university": "Ninja Academy",
+            "degree": "Genin",
+            "major": "Shuriken Jutsu",
+            "start": "2008",
+            "end": "2012",
+            "marks": "CGPA 10/10",
+            "location": "Konohagakure"
+        }
+    ],
+    "achievements": [
+        "Defeated Akatsuki member <a target=\"_blank\" href=\"https://naruto.fandom.com/wiki/Deidara\">Deidara</a> in one on one combat",
+        "Trained by one of Konohagakure's legendary Sannin <a target=\"_blank\" href=\"https://naruto.fandom.com/wiki/Deidara\">Orochimaru</a>",
+        "Survived agaist ice-style kekkei genkai user <a target=\"_blank\" href=\"https://naruto.fandom.com/wiki/Haku\">Haku</a> at age 12",
+        "Top of the class at Academy"
+    ]
+}
