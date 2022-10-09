@@ -1,0 +1,38 @@
+name: Upload Python Package
+
+on:
+  push:
+    branches: ["master"]
+    paths:
+    - 'data/'
+    - 'static/'
+    - 'template/'
+
+jobs:
+  build:
+    if: github.repository == 'rahulsrma26/jinja-resume'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Build
+        run: |
+          python -m src.run build ./data/example.json
+  deploy:
+      needs: build
+      permissions:
+        contents: write  
+      name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
+        publish_branch: example  # deploying branch
