@@ -1,4 +1,5 @@
 requests
+jinja2
 bs4
 fastapi
 uvicorn
