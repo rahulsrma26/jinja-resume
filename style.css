@@ -1,0 +1,200 @@
+:root {
+  --page-width: 210mm;
+  --page-height: 297mm;
+  --sidebar-width: 64mm;
+  --sidebar-color: rgb(187, 221, 247);
+}
+
+body {
+  background: rgb(204, 204, 204);
+  font-family: "Times New Roman", Times, serif;
+}
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+}
+page[size="A4"] {
+  width: var(--page-width);
+  height: var(--page-height);
+  box-shadow: 1mm 1mm 3mm 1mm rgba(128, 126, 126);
+}
+
+a {
+  color: blue;
+}
+a:visited {
+  color: blue;
+}
+
+img {
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+@media print {
+  body {
+    visibility: none;
+    margin: 0;
+    padding: 0;
+  }
+  page {
+    visibility: visible;
+    margin: 0;
+    box-shadow: 0;
+  }
+}
+
+.vstack {
+  display: flex;
+  flex-flow: column;
+}
+
+.hstack {
+  display: flex;
+}
+
+.apart {
+  justify-content: space-between;
+}
+
+.grow {
+  width: 100%;
+  height: 100%;
+}
+
+.vgap {
+  width: 100%;
+  height: 1.5mm;
+}
+
+.mini-vgap {
+  width: 100%;
+  height: 0.5mm;
+}
+
+.icon-tabler {
+  vertical-align: text-bottom;
+  font-size: 5mm;
+}
+
+.heading {
+  top: 0;
+  left: 0;
+  position: relative;
+  padding: 5mm 0 3mm 0;
+  width: 100%;
+  color: rgb(248, 248, 248);
+  background-color: rgb(28, 26, 26);
+  font-weight: 700;
+  font-size: 10mm;
+  text-align: center;
+}
+
+.middle {
+  flex: 1; /* 1 and it will fill whole space left if no flex value are set to other children*/
+  /* background: gold; */
+  overflow: auto;
+}
+
+.footer {
+  width: 100%;
+  border: 0;
+  border-top: 1px dashed #ccc;
+  color: rgb(146, 145, 45);
+  background: rgb(246, 245, 245);
+  min-height: 7mm;
+  text-align: center;
+  font-size: 3mm;
+}
+.footer pre {
+  margin: 0;
+  padding: 0;
+  padding-top: 1mm;
+}
+
+.footer a {
+  color: rgb(57, 163, 185);
+}
+
+h3 {
+  font-size: 4.5mm;
+  margin: 2mm 0 1mm 0;
+  padding: 0;
+}
+
+h4 {
+  font-size: 4mm;
+  margin: 2mm 0 2mm 0;
+  padding: 0;
+}
+
+.sidebar {
+  padding-left: 3mm;
+  background-color: var(--sidebar-color);
+  width: var(--sidebar-width);
+}
+
+.sidebar hr {
+  color: white;
+  background-color: white;
+  height: 0.8mm;
+  border: 0;
+  border-radius: 1mm;
+  width: 100%;
+}
+
+.info {
+  padding-left: 2mm;
+  padding-right: 2mm;
+  font-size: 3.2mm;
+  line-height: 1.4;
+}
+
+.info ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.info li {
+  margin-bottom: 1mm;
+}
+
+.main {
+  width: 100%;
+}
+
+.content {
+  padding: 0 7mm 0 3mm;
+  width: var(--page-width) - var(--sidebar-width);
+  line-height: 1.4;
+  font-size: 3.2mm;
+  flex: 1; /* 1 and it will fill whole space left if no flex value are set to other children*/
+  overflow: auto;
+}
+
+.content hr {
+  padding: 0;
+  margin: 0 0 1mm 0;
+  color: rgb(187, 221, 247);
+  background-color: rgb(187, 221, 247);
+  height: 0.8mm;
+  border: 0;
+  border-radius: 1mm;
+  width: 100%;
+}
+
+.content ul {
+  margin: 0;
+  padding: 0 0 0 5mm;
+}
+
+.content li {
+  padding: 0;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.company {
+  font-size: 4mm;
+}
