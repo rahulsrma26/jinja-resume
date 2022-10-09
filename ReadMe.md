@@ -2,9 +2,13 @@
 
 A resume generation utility using [jinja templates](https://jinja.palletsprojects.com/) with HTML and css.
 
-Example (click to view full):
+Example [resume](https://rahulsrma26.github.io/jinja-resume/):
 
-<a href="https://rahulsrma26.github.io/jinja-resume/" target="_blank"><img src="./docs/img/example.png" alt="example resume"/></a>
+To get the pdf simply print the resume by triggering print command from browser <kbd>Ctrl</kbd>+<kbd>P</kbd> for `windows`/`linux` and <kbd>⌘</kbd>+<kbd>P</kbd> for `mac`. Just make sure to choose page size as A4, margins to None and choose Options to include Background graphics.
+
+![example resume](./docs/img/example_print.png)
+
+[View example resume](https://rahulsrma26.github.io/jinja-resume/)
 
 For live preview the dev environment is build using [fastapi](https://fastapi.tiangolo.com/) and hot-reload is supported using [arel](https://github.com/florimondmanca/arel).
 
