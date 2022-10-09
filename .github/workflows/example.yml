@@ -9,7 +9,7 @@ on:
     - 'template/'
 
 jobs:
-  build:
+  build-and-deploy:
     if: github.repository == 'rahulsrma26/jinja-resume'
     runs-on: ubuntu-latest
     steps:
@@ -26,13 +26,9 @@ jobs:
       - name: Build
         run: |
           python -m src.run build ./data/example.json
-  deploy:
-      needs: build
-      permissions:
-        contents: write  
-      name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
-        publish_branch: example  # deploying branch
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: example  # deploying branch
