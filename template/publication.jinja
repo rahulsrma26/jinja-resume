@@ -3,8 +3,6 @@
 <br />
 <b>Areas:</b> {{pub.areas}}
 <br />
-<a target="_blank" href="{{scholar}}">Google scholar profile</a>
-({%- for key, value in citations(scholar).items() -%}
-{% if not loop.first %}, {% endif %}{{value}} {{key}}
-{%- endfor %})
+<a target="_blank" href="{{scholar.url}}">Google scholar profile</a>
+({{scholar.papers}} papers, {{scholar.citations}} citations, {{scholar.hindex}} h-index)
 {% endmacro %}
