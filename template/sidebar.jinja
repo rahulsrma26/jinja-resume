@@ -34,11 +34,13 @@
     </div>
     <hr />
     {% endif %}
+    {% if data.personal -%}
     <h4>Personal Details</h4>
     <div class="info">
       {{ personal(data.personal.items()) }}
     </div>
     <hr />
+    {% endif %}
     <div class="info">
       {{data.declaration}}
     </div>
